@@ -1,0 +1,17 @@
+package com.rgp.denuncia.controller;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/especies-dinero")
+@RequiredArgsConstructor
+public class EspeciesDineroController {
+    @GetMapping
+    public ResponseEntity<String> getById() {
+        return ResponseEntity.ok("ok");
+    }
+}
