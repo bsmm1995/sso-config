@@ -1,6 +1,6 @@
 server:
   port: 8080
-    #servlet:
+  #servlet:
   #context-path: /api/v1
   error:
     include-message: always
@@ -26,3 +26,12 @@ spring:
         jwt:
           issuer-uri: https://sso-rhsso-rgp-dev.apps.preprod.minpublico.cl/auth/realms/rgp
           jwk-set-uri: https://sso-rhsso-rgp-dev.apps.preprod.minpublico.cl/auth/realms/rgp/protocol/openid-connect/certs
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
+      hibernate: ERROR
+
